@@ -23,7 +23,7 @@ session_start(); //TODO: arreglar esto
   <!--# boostrap #-->
   <!-- Latest compiled and minified CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/plantilla.css">
+  <link rel="stylesheet" href="vistas/css/plantilla.css">
   <!-- Latest compiled JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -35,9 +35,9 @@ session_start(); //TODO: arreglar esto
 
   <!-- logo -->
   <div class="container-fluid">
-    <h3 class="text-center py-3">
-      <div class="logo-space"><img src="./img/logo.png" alt="">logo</div>
-    </h3>
+    
+      <div class="logo-space"><img src="vistas\img\logo.png" alt="Kingdom Heards" class="logo" div>
+    
   </div>
 
   <div class="container-fluid bg-secondary">
