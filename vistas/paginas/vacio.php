@@ -1,1 +1,4 @@
-<h1>pagina vacia</h1>
+<div class="loader">
+    <span>Let's rol</span>
+    <span>Let's rol</span>
+</div>

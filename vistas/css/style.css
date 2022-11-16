@@ -1,7 +1,9 @@
 @use postcss-preset-env {
   stage: 0;
 }
-
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap');   
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Sono:wght@300&display=swap');
 /* config.css */
 
 :root {
@@ -60,7 +62,7 @@
 
   --bodyBackgroundColor: #2c3338;
   --bodyColor: var(--baseColor);
-  --bodyFontFamily: "Open Sans";
+  --bodyFontFamily: "sono";
   --bodyFontFamilyFallback: sans-serif;
   --bodyFontSize: 0.875rem;
   --bodyFontWeight: 400;
@@ -269,34 +271,81 @@ p {
 }
 
 .active_l {
-  background: rgba(252, 195, 39, 1)!important;
-  background: -moz-linear-gradient(-45deg, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(252, 195, 39, 1)), color-stop(53%, rgba(249, 210, 103, 1)), color-stop(95%, rgba(219, 161, 0, 1)), color-stop(100%, rgba(219, 161, 0, 1)))!important;
-  background: -webkit-linear-gradient(-45deg, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
-  background: -o-linear-gradient(-45deg, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
-  background: -ms-linear-gradient(-45deg, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
-  background: linear-gradient(135deg, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcc327', endColorstr='#dba100', GradientType=1)!important;
+  background: rgba(252, 195, 39, 1) !important;
+  background: -moz-linear-gradient(-45deg, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%) !important;
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(252, 195, 39, 1)), color-stop(53%, rgba(249, 210, 103, 1)), color-stop(95%, rgba(219, 161, 0, 1)), color-stop(100%, rgba(219, 161, 0, 1))) !important;
+  background: -webkit-linear-gradient(-45deg, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%) !important;
+  background: -o-linear-gradient(-45deg, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%) !important;
+  background: -ms-linear-gradient(-45deg, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%) !important;
+  background: linear-gradient(135deg, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcc327', endColorstr='#dba100', GradientType=1) !important;
 }
 
 .active_c {
-  background: rgba(252, 195, 39, 1)!important;
-  background: -moz-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
+  background: rgba(252, 195, 39, 1) !important;
+  background: -moz-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%) !important;
   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252, 195, 39, 1)), color-stop(53%, rgba(249, 210, 103, 1)), color-stop(95%, rgba(219, 161, 0, 1)), color-stop(100%, rgba(219, 161, 0, 1)));
-  background: -webkit-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
-  background: -o-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
-  background: -ms-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
-  background: linear-gradient(to right, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcc327', endColorstr='#dba100', GradientType=1)!important;
+  background: -webkit-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%) !important;
+  background: -o-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%) !important;
+  background: -ms-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%) !important;
+  background: linear-gradient(to right, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcc327', endColorstr='#dba100', GradientType=1) !important;
 }
 
 .active_r {
-  background: rgba(252, 195, 39, 1)!important;
-  background: -moz-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252, 195, 39, 1)), color-stop(53%, rgba(249, 210, 103, 1)), color-stop(95%, rgba(219, 161, 0, 1)), color-stop(100%, rgba(219, 161, 0, 1)))!important;
-  background: -webkit-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
-  background: -o-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
-  background: -ms-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
-  background: linear-gradient(to right, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcc327', endColorstr='#dba100', GradientType=1)!important;
+  background: rgba(252, 195, 39, 1) !important;
+  background: -moz-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%) !important;
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252, 195, 39, 1)), color-stop(53%, rgba(249, 210, 103, 1)), color-stop(95%, rgba(219, 161, 0, 1)), color-stop(100%, rgba(219, 161, 0, 1))) !important;
+  background: -webkit-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%) !important;
+  background: -o-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%) !important;
+  background: -ms-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%) !important;
+  background: linear-gradient(to right, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcc327', endColorstr='#dba100', GradientType=1) !important;
+}
+
+
+
+.loader {
+margin-top: 40vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Lobster;
+}
+
+
+
+
+.loader span {
+  position: absolute;
+  color: #fff;
+  transform: translate(0%, 0%);
+  letter-spacing: 25px;
+  font-size: 90px
+}
+
+.loader span:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 1px #efb810;
+}
+
+.loader span:nth-child(2) {
+  color: rgb(128, 198255);
+  -webkit-text-stroke: 1px #efb810;
+  animation: uiverse723 3s ease-in-out infinite;
+}
+
+@keyframes uiverse723 {
+
+  0%,
+  100% {
+    clip-path: polygon(0% 45%, 15% 44%, 32% 50%,
+        54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+
+  50% {
+    clip-path: polygon(0% 60%, 16% 65%, 34% 66%,
+        51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
 }
