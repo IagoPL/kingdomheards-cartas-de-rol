@@ -1,32 +1,11 @@
-<?php
-
-if (isset($_SESSION["validarIngreso"])) {
-
-    if ($_SESSION["validarIngreso"] != "ok") {
-
-        echo '<script> window.location = "index.php?pagina=ingreso"; </script>';
-        return;
-    }
-} else {
-
-    echo '<script> window.location = "index.php?pagina=ingreso"; </script>';
-    return;
-}
-
-
-
-$usuarios = ControladorFormularios::ctrSeleccionarRegistros(null, null, null);
-
-
-
-?><head>
+<head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-<link rel="stylesheet" href="css/register.css">
+
 </head>
 
 <body>
@@ -36,7 +15,7 @@ $usuarios = ControladorFormularios::ctrSeleccionarRegistros(null, null, null);
 
     <div class="grid">
 
-      <form action="https://httpbin.org/post" method="POST" class="form login">
+      <form method="POST" class="form login">
 
         <div class="form__field">
           <label for="login__username"><svg class="icon">
@@ -54,15 +33,15 @@ $usuarios = ControladorFormularios::ctrSeleccionarRegistros(null, null, null);
             required>
         </div>
 
-        <div class="form__field">
+        <div class="form__field sing">
           <input type="submit" value="Sign In">
         </div>
 
       </form>
 
-      <p class="text--center">No eres miembro? <a href="register.html">Registrate ;)</a> <svg class="icon">
+      <p class="text--center information--text">No eres miembro? <a class="a_register" href="vistas/plantilla.php">Registrate ;)<svg class="icon">
           <use xlink:href="#icon-arrow-right"></use>
-        </svg></p>
+        </svg></a> </p>
 
     </div>
 

@@ -23,10 +23,10 @@ session_start(); //TODO: arreglar esto
   <!--# boostrap #-->
   <!-- Latest compiled and minified CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="vistas/css/plantilla.css">
   <!-- Latest compiled JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
+  <link rel="stylesheet" href="/proyectos/kingdomheards/vistas/css/style.css">
 
 </head>
 
@@ -36,7 +36,7 @@ session_start(); //TODO: arreglar esto
   <!-- logo -->
   <div class="container-fluid">
     
-      <div class="logo-space"><img src="vistas\img\logo.png" alt="Kingdom Heards" class="logo" div>
+      <div class="logo-space"><img src="vistas\img\logo.png" alt="Kingdom Heards" class="logo align" div>
     
   </div>
 
@@ -128,17 +128,18 @@ session_start(); //TODO: arreglar esto
           $_GET["pagina"] == "menu" ||
           $_GET["pagina"] == "objetos" ||
           $_GET["pagina"] == "magia" ||
+          $_GET["pagina"] == "vacio" ||
           $_GET["pagina"] == "ataque"
 
           // TODO: meter las paginas a la lista
         ) {
-          include "paginas/" . $_GET["pagina"] . ".php";
+          include "vistas/paginas/" . $_GET["pagina"] . ".php";
         } else {
 
-          include "paginas/error404.php";
+          include "vistas/paginas/error404.php";
         }
       } else {
-        include "paginas/incio.php";
+        include "vistas/paginas/inicio.php";
       }
 
       ?>
