@@ -33,6 +33,24 @@
             required>
         </div>
 
+        <div class="form__field">
+          <label for="repead__password"><svg class="icon">
+              <use xlink:href="#icon-lock"></use>
+            </svg><span class="hidden">Contraseña</span></label>
+          <input id="login__password" type="password" name="password" class="form__input" placeholder=" Repead Password"
+            required>
+        </div>
+        
+
+        <!-- TODO: hacer cher master -->
+        <div class="form__field">
+          <label for="login__password"><svg class="icon">
+              <use xlink:href="#icon-lock"></use>
+            </svg><span class="hidden">Contraseña</span></label>
+          <input id="master" type="checkbox" name="master" class="form__input" placeholder="Password"
+            required>
+        </div>
+
 
         <!-- TODO: hacer que registre y logue desde la base de datos y que lleve a el apartado principal -->
         <div class="form__field sing">

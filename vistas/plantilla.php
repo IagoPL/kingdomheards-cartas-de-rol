@@ -53,7 +53,7 @@ session_start(); //TODO: arreglar esto
             <?php if (($_GET["pagina"]) == "ataque") : ?>
 
               <li class="nav-item">
-                <a class="nav-link active text-dark" href="index.php?pagina=ataque">ATAQUE</a>
+                <a class="nav-link active  active_l text-dark" href="index.php?pagina=ataque">ATAQUE</a>
               </li>
 
             <?php else : ?>
@@ -68,13 +68,13 @@ session_start(); //TODO: arreglar esto
             <?php if (($_GET["pagina"]) == "magia") : ?>
 
               <li class="nav-item">
-                <a class="nav-link active text-dark" href="index.php?pagina=magia">MAGIA</a>
+                <a class="nav-link active active_c text-dark" href="index.php?pagina=magia">MAGIA</a>
               </li>
 
             <?php else : ?>
 
               <li class="nav-item">
-                <a class="nav-link text-light" href="index.php?pagina=magia">MAGIA</a>
+                <a class="nav-link text-light " href="index.php?pagina=magia">MAGIA</a>
               </li>
 
 
@@ -83,7 +83,7 @@ session_start(); //TODO: arreglar esto
             <?php if (($_GET["pagina"]) == "objetos") : ?>
 
               <li class="nav-item">
-                <a class="nav-link active text-dark" href="index.php?pagina=objetos">OBJETOS</a>
+                <a class="nav-link active active_r text-dark" href="index.php?pagina=objetos">OBJETOS</a>
               </li>
 
             <?php else : ?>

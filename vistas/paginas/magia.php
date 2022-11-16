@@ -1,1 +1,1 @@
-MAGIA
+<h1>pagina de magia</h1>

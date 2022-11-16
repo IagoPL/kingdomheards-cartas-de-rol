@@ -1,1 +1,1 @@
-objetos
+<h1>pagina de objetos</h1>

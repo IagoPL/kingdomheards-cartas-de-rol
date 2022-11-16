@@ -265,5 +265,38 @@ p {
   background: -ms-linear-gradient(-45deg, rgba(252, 195, 39, 1) 0%, rgba(252, 195, 39, 1) 21%, rgba(249, 210, 102, 1) 40%, rgba(250, 218, 137, 1) 52%, rgba(219, 161, 0, 1) 100%) !important;
   background: linear-gradient(135deg, rgba(252, 195, 39, 1) 0%, rgba(252, 195, 39, 1) 21%, rgba(249, 210, 102, 1) 40%, rgba(250, 218, 137, 1) 52%, rgba(219, 161, 0, 1) 100%) !important;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcc327', endColorstr='#dba100', GradientType=1) !important;
-  
+
+}
+
+.active_l {
+  background: rgba(252, 195, 39, 1)!important;
+  background: -moz-linear-gradient(-45deg, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(252, 195, 39, 1)), color-stop(53%, rgba(249, 210, 103, 1)), color-stop(95%, rgba(219, 161, 0, 1)), color-stop(100%, rgba(219, 161, 0, 1)))!important;
+  background: -webkit-linear-gradient(-45deg, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
+  background: -o-linear-gradient(-45deg, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
+  background: -ms-linear-gradient(-45deg, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
+  background: linear-gradient(135deg, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcc327', endColorstr='#dba100', GradientType=1)!important;
+}
+
+.active_c {
+  background: rgba(252, 195, 39, 1)!important;
+  background: -moz-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252, 195, 39, 1)), color-stop(53%, rgba(249, 210, 103, 1)), color-stop(95%, rgba(219, 161, 0, 1)), color-stop(100%, rgba(219, 161, 0, 1)));
+  background: -webkit-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
+  background: -o-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
+  background: -ms-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
+  background: linear-gradient(to right, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcc327', endColorstr='#dba100', GradientType=1)!important;
+}
+
+.active_r {
+  background: rgba(252, 195, 39, 1)!important;
+  background: -moz-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252, 195, 39, 1)), color-stop(53%, rgba(249, 210, 103, 1)), color-stop(95%, rgba(219, 161, 0, 1)), color-stop(100%, rgba(219, 161, 0, 1)))!important;
+  background: -webkit-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
+  background: -o-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
+  background: -ms-linear-gradient(left, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
+  background: linear-gradient(to right, rgba(252, 195, 39, 1) 0%, rgba(249, 210, 103, 1) 53%, rgba(219, 161, 0, 1) 95%, rgba(219, 161, 0, 1) 100%)!important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcc327', endColorstr='#dba100', GradientType=1)!important;
 }
