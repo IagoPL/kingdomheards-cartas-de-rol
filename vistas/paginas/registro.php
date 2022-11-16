@@ -33,13 +33,15 @@
             required>
         </div>
 
+
+        <!-- TODO: hacer que registre y logue desde la base de datos y que lleve a el apartado principal -->
         <div class="form__field sing">
-          <input type="submit" value="Sign In">
+          <input type="submit" value="Registrate">
         </div>
 
       </form>
 
-      <p class="text--center information--text">No eres miembro? <a class="a_register" href="inicio.php">Registrate ;)<svg class="icon">
+      <p class="text--center information--text">Ya eres miembro? <a class="a_register" href="index.php?pagina=inicio">Entra ;)<svg class="icon">
           <use xlink:href="#icon-arrow-right"></use>
         </svg></a> </p>
 

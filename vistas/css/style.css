@@ -251,3 +251,19 @@ p {
 #icon-arrow-right:hover {
   color: var(--baseColor);
 }
+
+.nav-bar {
+  border-radius: 3px;
+}
+
+.active {
+  background: rgba(252, 195, 39, 1) !important;
+  background: -moz-linear-gradient(-45deg, rgba(252, 195, 39, 1) 0%, rgba(252, 195, 39, 1) 21%, rgba(249, 210, 102, 1) 40%, rgba(250, 218, 137, 1) 52%, rgba(219, 161, 0, 1) 100%) !important;
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(252, 195, 39, 1)), color-stop(21%, rgba(252, 195, 39, 1)), color-stop(40%, rgba(249, 210, 102, 1)), color-stop(52%, rgba(250, 218, 137, 1)), color-stop(100%, rgba(219, 161, 0, 1))) !important;
+  background: -webkit-linear-gradient(-45deg, rgba(252, 195, 39, 1) 0%, rgba(252, 195, 39, 1) 21%, rgba(249, 210, 102, 1) 40%, rgba(250, 218, 137, 1) 52%, rgba(219, 161, 0, 1) 100%) !important;
+  background: -o-linear-gradient(-45deg, rgba(252, 195, 39, 1) 0%, rgba(252, 195, 39, 1) 21%, rgba(249, 210, 102, 1) 40%, rgba(250, 218, 137, 1) 52%, rgba(219, 161, 0, 1) 100%) !important;
+  background: -ms-linear-gradient(-45deg, rgba(252, 195, 39, 1) 0%, rgba(252, 195, 39, 1) 21%, rgba(249, 210, 102, 1) 40%, rgba(250, 218, 137, 1) 52%, rgba(219, 161, 0, 1) 100%) !important;
+  background: linear-gradient(135deg, rgba(252, 195, 39, 1) 0%, rgba(252, 195, 39, 1) 21%, rgba(249, 210, 102, 1) 40%, rgba(250, 218, 137, 1) 52%, rgba(219, 161, 0, 1) 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcc327', endColorstr='#dba100', GradientType=1) !important;
+  
+}

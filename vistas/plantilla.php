@@ -35,77 +35,81 @@ session_start(); //TODO: arreglar esto
 
   <!-- logo -->
   <div class="container-fluid">
-    
-      <div class="logo-space"><img src="vistas\img\logo.png" alt="Kingdom Heards" class="logo align" div>
-    
-  </div>
 
-  <div class="container-fluid bg-secondary">
-    <div class="container">
-      <ul class="nav nav-justified py2 nav-pills">
+    <!-- TODO: mirar donde rediriguir esto, por ahora est en atk por facilidad para las puebas -->
+    <div class="logo-space">
+      <a href="index.php?pagina=ataque">
+        <img src="vistas\img\logo.png" alt="Kingdom Heards" class="logo align" div>
+      </a>
+    </div>
 
-
-        <?php if (isset($_GET["pagina"])) : ?>
-
-          <?php if (($_GET["pagina"]) == "ataque") : ?>
-
-            <li class="nav-item">
-              <a class="nav-link active text-light" href="index.php?pagina=ataque">ATAQUE</a>
-            </li>
-
-          <?php else : ?>
-
-            <li class="nav-item">
-              <a class="nav-link text-light" href="index.php?pagina=ataque">ATAQUE</a>
-            </li>
+    <div class="container-fluid bg-secondary nav-bar">
+      <div class="container">
+        <ul class="nav nav-justified py2 nav-pills">
 
 
-          <?php endif ?>
+          <?php if (($_GET["pagina"] == "ataque" || $_GET["pagina"] == "magia" || $_GET["pagina"] == "objetos" || $_GET["pagina"] == "error404")) : ?>
 
-          <?php if (($_GET["pagina"]) == "magia") : ?>
+            <?php if (($_GET["pagina"]) == "ataque") : ?>
 
-            <li class="nav-item">
-              <a class="nav-link active text-light" href="index.php?pagina=magia">MAGIA</a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link active text-dark" href="index.php?pagina=ataque">ATAQUE</a>
+              </li>
 
-          <?php else : ?>
+            <?php else : ?>
 
-            <li class="nav-item">
-              <a class="nav-link text-light" href="index.php?pagina=magia">MAGIA</a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="index.php?pagina=ataque">ATAQUE</a>
+              </li>
 
 
-          <?php endif ?>
+            <?php endif ?>
+
+            <?php if (($_GET["pagina"]) == "magia") : ?>
+
+              <li class="nav-item">
+                <a class="nav-link active text-dark" href="index.php?pagina=magia">MAGIA</a>
+              </li>
+
+            <?php else : ?>
+
+              <li class="nav-item">
+                <a class="nav-link text-light" href="index.php?pagina=magia">MAGIA</a>
+              </li>
+
+
+            <?php endif ?>
 
             <?php if (($_GET["pagina"]) == "objetos") : ?>
 
-            <li class="nav-item">
-                <a class="nav-link active text-light" href="index.php?pagina=objetos">OBJETOS</a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link active text-dark" href="index.php?pagina=objetos">OBJETOS</a>
+              </li>
 
+            <?php else : ?>
+
+              <li class="nav-item">
+                <a class="nav-link text-light" href="index.php?pagina=objetos">OBJETOS</a>
+              </li>
+
+            <?php endif ?>
+
+
+
+
+            <!-- GET: $GET[variable] son variables que se pasan como parametros a traces de una URL
+        cuendo es la primera variable se marca con ? el inicio
+        para concatenar mas se hacen con & -->
           <?php else : ?>
 
-            <li class="nav-item">
-                <a class="nav-link text-light" href="index.php?pagina=objetos">OBJETOS</a>
-            </li>
+
+
 
           <?php endif ?>
 
-
-
-
-          <!-- GET: $GET[variable] son variables que se pasan como parametros a traces de una URL
-        cuendo es la primera variable se marca con ? el inicio
-        para concatenar mas se hacen con & -->
-
-
-
-
-        <?php endif ?>
-
-      </ul>
+        </ul>
+      </div>
     </div>
-  </div>
 
 
 
