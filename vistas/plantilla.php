@@ -38,58 +38,61 @@ session_start(); //TODO: arreglar esto
 
     <!-- TODO: mirar donde rediriguir esto, por ahora est en atk por facilidad para las puebas -->
     <div class="logo-space">
-      <a href="index.php?pagina=ataque">
+      <a href="index.php?pagina=combate.ataque">
         <img src="vistas\img\logo.png" alt="Kingdom Heards" class="logo align" div>
       </a>
     </div>
 
+
+    <!-- TODO comprobar si es combate o inverntario y poner el active doble -->
     <div class="container-fluid bg-secondary nav-bar">
       <div class="container">
         <ul class="nav nav-justified py2 nav-pills">
 
 
-          <?php if (($_GET["pagina"] == "ataque" || $_GET["pagina"] == "magia" || $_GET["pagina"] == "objetos" || $_GET["pagina"] == "error404")) : ?>
+          <?php if (($_GET["pagina"] == "combate.ataque" || $_GET["pagina"] == "combate.magia" || $_GET["pagina"] == "combate.objetos" || $_GET["pagina"] == "error404")) : ?>
 
-            <?php if (($_GET["pagina"]) == "ataque") : ?>
+
+            <?php if (($_GET["pagina"]) == "combate.ataque") : ?>
 
               <li class="nav-item">
-                <a class="nav-link active  active_l text-dark" href="index.php?pagina=ataque">ATAQUE</a>
+                <a class="nav-link active  active_l text-dark" href="index.php?pagina=combate.ataque">ATAQUE</a>
               </li>
 
             <?php else : ?>
 
               <li class="nav-item">
-                <a class="nav-link text-light" href="index.php?pagina=ataque">ATAQUE</a>
+                <a class="nav-link text-light" href="index.php?pagina=combate.ataque">ATAQUE</a>
               </li>
 
 
             <?php endif ?>
 
-            <?php if (($_GET["pagina"]) == "magia") : ?>
+            <?php if (($_GET["pagina"]) == "combate.magia") : ?>
 
               <li class="nav-item">
-                <a class="nav-link active active_c text-dark" href="index.php?pagina=magia">MAGIA</a>
+                <a class="nav-link active active_c text-dark" href="index.php?pagina=combate.magia">MAGIA</a>
               </li>
 
             <?php else : ?>
 
               <li class="nav-item">
-                <a class="nav-link text-light " href="index.php?pagina=magia">MAGIA</a>
+                <a class="nav-link text-light " href="index.php?pagina=combate.magia">MAGIA</a>
               </li>
 
 
             <?php endif ?>
 
-            <?php if (($_GET["pagina"]) == "objetos") : ?>
+            <?php if (($_GET["pagina"]) == "combate.objetos") : ?>
 
               <li class="nav-item">
-                <a class="nav-link active active_r text-dark" href="index.php?pagina=objetos">OBJETOS</a>
+                <a class="nav-link active active_r text-dark" href="index.php?pagina=combate.objetos">OBJETOS</a>
               </li>
 
             <?php else : ?>
 
               <li class="nav-item">
-                <a class="nav-link text-light" href="index.php?pagina=objetos">OBJETOS</a>
+                <a class="nav-link text-light" href="index.php?pagina=combate.objetos">OBJETOS</a>
               </li>
 
             <?php endif ?>
@@ -100,11 +103,14 @@ session_start(); //TODO: arreglar esto
             <!-- GET: $GET[variable] son variables que se pasan como parametros a traces de una URL
         cuendo es la primera variable se marca con ? el inicio
         para concatenar mas se hacen con & -->
+          <?php elseif (($_GET["pagina"] == "combate.ataque" || $_GET["pagina"] == "combate.magia" || $_GET["pagina"] == "combate.objetos" || $_GET["pagina"] == "error404")) : ?>
+
+
+
+
+
           <?php else : ?>
-
-
-
-
+            <!-- en este caso no muestra nada -->
           <?php endif ?>
 
         </ul>
@@ -130,12 +136,15 @@ session_start(); //TODO: arreglar esto
           $_GET["pagina"] == "inicio" ||
           $_GET["pagina"] == "registro" ||
           $_GET["pagina"] == "menu" ||
-          $_GET["pagina"] == "objetos" ||
-          $_GET["pagina"] == "magia" ||
+          $_GET["pagina"] == "combate.objetos" ||
+          $_GET["pagina"] == "combate.magia" ||
+          $_GET["pagina"] == "combate.ataque" ||
           $_GET["pagina"] == "vacio" ||
-          $_GET["pagina"] == "ataque"
+          $_GET["pagina"] == "inventario.objetos" ||
+          $_GET["pagina"] == "inventario.magia" ||
+          $_GET["pagina"] == "inventario.ataque"
 
-          // TODO: meter las paginas a la lista
+
         ) {
           include "vistas/paginas/" . $_GET["pagina"] . ".php";
         } else {

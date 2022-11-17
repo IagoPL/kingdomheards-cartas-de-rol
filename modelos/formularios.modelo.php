@@ -8,7 +8,7 @@ class ModeloFormularios
     static public function mdlRegistro($tabla, $datos)
     {
 
-        // statement -> declaracion 
+        // statement -> declaración 
 
         $stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(nombre,correo, pswd) VALUES (:nombre,:correo,:pswd)");
 
@@ -29,11 +29,11 @@ class ModeloFormularios
     static public function mdlNuevoVideo($tabla, $datos)
     {
 
-        // statement -> declaracion 
+        // statement -> declaración 
 
         $stmt = Conexion::conectar()->prepare("INSERT INTO $tabla(nombre_video,enlace, autor, descripcion) VALUES (:nombre_video,:enlace,:autor,:descripcion)");
 
-        /*bindParam(), vincula una vatriable php a un parametro de sustitucion con nombre o de signo de interrogacion correcpondientes a la secuencia sql que fue usada para preparar la centencia*/
+        /*bindParam(), vincula una variable php a un parámetro de sustitución con nombre o de signo de interrogacion correcpondientes a la secuencia sql que fue usada para preparar la centencia*/
 
         $stmt->bindParam(":nombre_video", $datos["nombre_video"], PDO::PARAM_STR);
         $stmt->bindParam(":enlace", $datos["enlace"], PDO::PARAM_STR);

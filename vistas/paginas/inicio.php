@@ -30,7 +30,8 @@
             <input id="login__password" type="password" name="password" class="form__input" placeholder="Password" required>
           </div>
 
-          <!-- TODO: hacer que registre y logue desde la base de datos y que lleve a el apartado principal -->
+          <!-- TODO: hacer que registre y loquear desde la base de datos y que lleve a el apartado principal -->
+          
           <div class="form__field sing">
             <input type="submit" value="Entra">
           </div>
